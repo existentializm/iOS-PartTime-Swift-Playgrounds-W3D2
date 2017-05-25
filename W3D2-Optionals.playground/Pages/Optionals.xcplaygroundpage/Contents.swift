@@ -61,9 +61,9 @@ var convertedString = Int(inputString)
 //:
 //: Then, change the string "1" to "🔥" and observe how the playground responds (or doesn't respond)
 
-var number = Int("1")
+var number = Int("🔥")
 number! + 1 // uncomment and fix this.
-number! = "🔥"
+
 
 
 //: In general, force unwrapping is always a risk for a crash, and should be used sparingly and with caution.
@@ -91,6 +91,12 @@ if let unwrapped = number {
 //: Here's an optional variable. Conditionally unwrap and print it if it exists, print "no greeting" if it doesn't exist.
 
 var greeting: String? = "Aloha!"
+
+if let greeting = greeting {
+    print(greeting)
+}else{
+    print("no greeting")
+}
 
 
 //: ## One last thing...
